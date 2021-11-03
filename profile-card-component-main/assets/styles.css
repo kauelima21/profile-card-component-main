@@ -12,7 +12,7 @@
 }
 
 .app .card {
-    width: 18%;
+    width: 23em;
     background-color: #fff;
     border-radius: 15px;
     overflow: hidden;
@@ -38,14 +38,14 @@
 
 #app_bg_top {
     position: fixed;
-    bottom: 350px;
-    left: -50px;
+    bottom: 25em;
+    left: 0em;
 }
 
 #app_bg_bottom {
     position: fixed;
-    top: 450px;
-    right: -150px;
+    top: 28em;
+    right: 0em;
 }
 
 #card_header_bg {
@@ -96,4 +96,22 @@
 .app .card .card_section div p, .app .card .card_header_name label span, .app .card .card_header_name p {
     font-weight: 400;
     color: hsl(227, 10%, 46%);
+}
+
+@media (max-width: 375px) {
+    .app .card {
+        width: 20em;
+    }
+
+    #app_bg_top {
+        position: fixed;
+        bottom: 20em;
+        left: -45em;
+    }
+
+    #app_bg_bottom {
+        position: fixed;
+        top: 28em;
+        left: 5em;
+    }
 }
