@@ -12,16 +12,11 @@
 }
 
 .app .card {
-    width: 400px;
+    width: 18%;
     background-color: #fff;
     border-radius: 15px;
     overflow: hidden;
     z-index: 2;
-}
-
-.app .card .card_section {
-    display: flex;
-    justify-content: space-around;
 }
 
 .app .card .card_header {
@@ -42,9 +37,15 @@
 }
 
 #app_bg_top {
-    position: absolute;
-    bottom: 500px;
-    left: 15px;
+    position: fixed;
+    bottom: 350px;
+    left: -50px;
+}
+
+#app_bg_bottom {
+    position: fixed;
+    top: 450px;
+    right: -150px;
 }
 
 #card_header_bg {
@@ -55,12 +56,12 @@
     border-radius: 50%;
     border: 5px solid #fff;
     margin-top: -60px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 .app .card .card_header_name label, .app .card .card_header_name p {
     flex-basis: 100%;
-    padding: 2px;
+    padding-bottom: 10px;
 }
 
 .app .card .card_header_name label span {
@@ -71,14 +72,19 @@
     font-size: 14px;
 }
 
+.app .card .card_section {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+}
+
 .app .card .card_section div p {
-    font-size: 12px;
+    font-size: 10px;
 }
 
 .app .card .card_section div {
-    flex-basis: 20%;
+    flex-basis: 25%;
     text-align: center;
-    padding: 30px 20px;
 }
 
 .app .card .card_section div h2, .app .card .card_header_name label {
